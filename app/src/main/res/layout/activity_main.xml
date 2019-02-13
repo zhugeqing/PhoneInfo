@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="6dp"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.phoneinfo.MainActivity">
+    <!--
+    <include layout="@layout/mycustomtitle"/>
+    -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2sp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="终端信息"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2sp"/>
+        <TextView
+            android:id="@+id/tvTimeleaps"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="tvTimeleaps"
+            android:textSize="12sp"
+            android:layout_marginTop="2sp"
+            android:gravity="end"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="2sp"
+        android:paddingBottom="1sp">
+
+        <TextView
+            android:id="@+id/tvOperaterName"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvOperaterName"
+            android:background="@android:color/white"/>
+        <TextView
+            android:id="@+id/tvRatType"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvRatType"
+            android:background="@android:color/white"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="1sp"
+        android:paddingBottom="1sp">
+        <TextView
+        android:id="@+id/tvDeviceId"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+        android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvDeviceId"
+            android:background="@android:color/white"/>
+        <TextView
+            android:id="@+id/tvImsi"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvImsi"
+            android:background="@android:color/white"/>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="1sp"
+        android:paddingBottom="1sp">
+        <TextView
+        android:id="@+id/tMnc"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+        android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tMnc"
+            android:background="@android:color/white"/>
+    <TextView
+        android:id="@+id/tvMcc"
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="tvMcc"
+        android:background="@android:color/white"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="1sp"
+        android:paddingBottom="1sp"
+        android:visibility="gone">
+        <TextView
+        android:id="@+id/tvLine1Number"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+        android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvLine1Number"
+            android:visibility="gone"
+            android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvSerialNum"
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="tvSerialNum"
+        android:background="@android:color/white"
+        android:visibility="gone"/>
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="1sp"
+        android:paddingBottom="2sp">
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvModel"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvSoftware"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvSoftware"
+            android:background="@android:color/white"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1sp"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="地理信息"
+            android:layout_marginTop="2sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="2sp"
+        android:paddingBottom="1sp">
+
+        <TextView
+            android:id="@+id/tvloctype"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="定位类型"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvtermdir"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="方向"
+            android:background="@android:color/white"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="1sp"
+        android:paddingBottom="1sp">
+        <TextView
+            android:id="@+id/tvtermspeed"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="当前速度"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvaltitude"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="海拔高度"
+            android:background="@android:color/white"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="1sp"
+        android:paddingBottom="1sp">
+
+        <TextView
+            android:id="@+id/tvtermaddr"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="地址"
+            android:background="@android:color/white"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:paddingTop="1sp"
+        android:paddingBottom="2sp">
+        <TextView
+            android:id="@+id/tvPhoneGpsLong"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="经度"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvPhoneGpsLat"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="纬度"
+            android:background="@android:color/white"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1sp"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="服务/邻小区信息"
+        android:layout_marginTop="2sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="2sp">
+        <TextView
+
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="小区名" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="CI/EARFCN" />
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="PCI" />
+        <TextView
+            android:layout_weight="0.8"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="TAC" />
+        <TextView
+        android:layout_weight="0.6"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:text="dBm" />
+        <TextView
+            android:layout_weight="0.6"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="RSRQ" />
+
+    </TableRow>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myrcv"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_below="@+id/tvTimeleaps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史小区记录"
+        android:textSize="12sp"
+        android:layout_marginTop="2sp"/>
+        <TextView
+            android:id="@+id/tvCellCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="tvCellCount"
+            android:layout_marginTop="2sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="2sp">
+        <TextView
+
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="小区名" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="CI/EARFCN" />
+        <TextView
+            android:layout_weight="0.7"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="PCI" />
+        <TextView
+            android:layout_weight="0.8"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="TAC" />
+        <TextView
+            android:layout_weight="0.6"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="dBm" />
+        <TextView
+            android:layout_weight="0.6"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="RSRQ" />
+
+    </TableRow>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/historyrcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+</TableLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="14sp"
+        android:background="#FFEDEDED"></TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="导入基站信息表"
+        android:textColor="@color/colorAccent"
+        android:paddingLeft="16sp"
+        android:paddingTop="16sp"
+        android:textSize="16sp" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+    <Button
+        android:id="@+id/down_excel_button"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:background="@drawable/redlight_btnback_640_80_10"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/white"
+        android:text="方式1:联网更新基站信息表(推荐)" />
+    </TableRow>
+    <LinearLayout
+        android:id="@+id/linearlayout_cellfiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+    </LinearLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    <Button
+        android:id="@+id/read_excel_button"
+        android:layout_width="0sp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:textSize="14sp"
+        android:background="@android:color/transparent"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="方式2:导入手机中的基站信息表(.xls)" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="14sp"
+        android:background="#FFEDEDED"></TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="导入MR信息表"
+        android:paddingLeft="16sp"
+        android:paddingTop="16sp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示：请勾选要导入的MR文件，并点击按钮导入"
+        android:layout_marginTop="16sp"
+        android:paddingLeft="16sp"
+        android:textSize="12sp" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+    <Button
+        android:id="@+id/read_MRexcel_button"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:background="@drawable/redlight_btnback_640_80_10"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/white"
+        android:text="联网导入MR栅格信息(50米×50米)" />
+    </TableRow>
+<LinearLayout
+    android:id="@+id/linearlayout_mrfiles"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+</LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

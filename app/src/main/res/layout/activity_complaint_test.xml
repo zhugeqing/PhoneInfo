@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建任务：商业测试/投诉"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#FFEDEDED">
+
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="县市"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"/>
+            <Spinner
+                android:id = "@+id/Spinner_complainttest_area"
+                android:layout_width = "0sp"
+                android:layout_weight="3"
+                android:layout_height ="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:entries="@array/wenzhou_area">
+            </Spinner>
+        </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#FFEDEDED">
+
+            </TableRow>
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="投诉编号："
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"/>
+                <EditText
+                android:id = "@+id/et_complainttest_complaintid"
+                android:layout_width = "0sp"
+                android:layout_weight="3"
+                android:layout_height ="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+            </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#FFEDEDED">
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="用户号码："
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin" />
+                <EditText
+                    android:id = "@+id/et_complainttest_complaintISDN"
+                    android:layout_width = "0sp"
+                    android:layout_weight="3"
+                    android:layout_height ="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#FFEDEDED">
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="具体地址："
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin" />
+                <EditText
+                    android:id = "@+id/et_complainttest_address"
+                    android:layout_width = "0sp"
+                    android:layout_weight="3"
+                    android:layout_height ="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#FFEDEDED">
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="场景类型："
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"/>
+                <Spinner
+                    android:id = "@+id/Spinner_complainttest_areatype"
+                    android:layout_width = "0sp"
+                    android:layout_weight="3"
+                    android:layout_height ="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:entries="@array/area_type">
+                </Spinner>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#FFEDEDED">
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="室内外："
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"/>
+                <Spinner
+                    android:id = "@+id/Spinner_complainttest_indoor"
+                    android:layout_width = "0sp"
+                    android:layout_weight="3"
+                    android:layout_height ="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:entries="@array/indoor_outdoor">
+                </Spinner>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#FFEDEDED">
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="栅格号："
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin" />
+                <EditText
+                    android:id = "@+id/et_complainttest_gridnumber"
+                    android:layout_width = "0sp"
+                    android:layout_weight="3"
+                    android:layout_height ="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#FFEDEDED">
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="经度"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id = "@+id/et_complainttest_longtitude"
+                    android:layout_width = "0sp"
+                    android:layout_weight="2"
+                    android:layout_height ="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="纬度"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id = "@+id/et_complainttest_latitude"
+                    android:layout_width = "0sp"
+                    android:layout_weight="2"
+                    android:layout_height ="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin">
+                </TextView>
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建"
+        android:textColor="@android:color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_red_light"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill_horizontal"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+
+<TableRow>
+    <TextView android:id="@+id/header_text"
+        android:layout_weight="12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="WZMCC Cellinfo"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#21cbc1" />
+
+
+    <ImageButton
+        android:id="@+id/addbtn"
+        android:layout_weight="1"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6sp"
+        android:background="@android:drawable/arrow_down_float" />
+
+</TableRow>
+
+</TableLayout>

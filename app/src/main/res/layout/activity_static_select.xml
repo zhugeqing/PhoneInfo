@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="6sp"
+                android:text="统计结果"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"></TextView>
+
+            <Button
+                android:id="@+id/btn_static_calc"
+                android:layout_height="wrap_content"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="统计"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_static_export"
+                android:layout_height="40sp"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/redlight_btnback_320_80_10"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="@android:color/white"
+                android:text="导出清单"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="4sp"
+            android:background="#FFEDEDED"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1.1"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:text="图层名称:"
+            android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_static_layername"
+                android:layout_width="0sp"
+                android:layout_weight="1.9"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="6sp"
+                android:text="--"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="6sp"
+                android:text="Counts:"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:id="@+id/tv_static_counts"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="6sp"
+                android:layout_gravity="start"
+                android:text="--"
+                android:textSize="14sp"></TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#FFEDEDED"></TableRow>
+        <LinearLayout
+            android:id="@+id/linearlayout_staticresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

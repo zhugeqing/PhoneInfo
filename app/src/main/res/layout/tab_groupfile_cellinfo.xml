@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4sp"
+    android:paddingBottom="4sp">
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="12sp"
+        android:paddingLeft="8sp"
+        android:text="文件名" />
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:textSize="12sp"
+        android:text="大小" />
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:text="修改时间" />
+</TableRow>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_groupfiles_cellinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+</LinearLayout>

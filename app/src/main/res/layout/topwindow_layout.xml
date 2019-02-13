@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/button_topwindow_onoff"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@android:drawable/ic_notification_clear_all"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/button_topwindow_hide"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/arrow_down_float" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_topwindow_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="卫星数："/>
+        <TextView
+            android:id="@+id/tv_topwindow_satllite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="经度："/>
+    <TextView
+        android:id="@+id/tv_topwindow_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="#0f0"
+        android:text="--"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="纬度："/>
+        <TextView
+            android:id="@+id/tv_topwindow_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="海拔高度："/>
+        <TextView
+            android:id="@+id/tv_topwindow_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="方向角："/>
+        <TextView
+            android:id="@+id/tv_topwindow_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="倾角："/>
+        <TextView
+            android:id="@+id/tv_topwindow_tilt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="旋转角："/>
+        <TextView
+            android:id="@+id/tv_topwindow_rotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="时间："/>
+        <TextView
+            android:id="@+id/tv_topwindow_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:text="地址："/>
+        <TextView
+            android:id="@+id/tv_topwindow_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#0f0"
+            android:text="--"/>
+    </TableRow>
+    </LinearLayout>
+
+</LinearLayout>

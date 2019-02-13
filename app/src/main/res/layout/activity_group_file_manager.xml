@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tr_groupfiles_buttonbar">
+
+        <!-- 顶部导航栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_groupfiles_log"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="LOG文件"
+                android:textColor="#ff0000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_groupfiles_cellinfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="基站信息"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_groupfiles_mr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MR信息"
+                android:textSize="16sp" />
+            <TextView
+            android:id="@+id/tv_groupfiles_userlayer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="用户图层"
+            android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!-- Tab底部下划线 -->
+        <ImageView
+        android:id="@+id/iv_tab_bottom_img"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:scaleType="matrix"
+        android:src="@drawable/red_line_90_2" />
+
+        <!-- 内容页 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_groupfile_vPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff" />
+
+
+    </LinearLayout>
+    <TableRow
+        android:id="@+id/tr_groupfiles_buttonbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/btn_groupfile_upload"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:background="@drawable/redlight_buttonbackground_320_160_20"
+            android:text="上传"
+            android:textColor="@android:color/white">
+
+        </Button>
+        <Button
+            android:layout_margin="2sp"
+            android:id="@+id/btn_groupfile_download"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/redlight_buttonbackground_320_160_20"
+            android:textColor="@android:color/white"
+            android:text="下载">
+
+        </Button>
+        <Button
+            android:layout_margin="2sp"
+            android:id="@+id/btn_groupfile_delete"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/redlight_buttonbackground_320_160_20"
+            android:textColor="@android:color/white"
+            android:text="删除">
+
+        </Button>
+
+    </TableRow>
+</RelativeLayout>

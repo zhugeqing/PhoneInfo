@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.administrator.phoneinfo.AppUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="14sp"
+            android:background="#FFEDEDED"></TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网优云图下载二维码链接："
+                android:paddingTop="16sp"
+                android:paddingBottom="16sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提醒：请使用手机浏览器扫描下载。因微信软件限制，直接使用微信二维码扫描注意按提示操作。"
+                android:paddingBottom="16sp"
+                android:paddingLeft="32sp"
+                android:paddingRight="32sp"
+                />
+            </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:src="@drawable/yuntu2" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="center">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_updateversion"
+                android:layout_width="200sp"
+                android:layout_height="60sp"
+                android:background="@drawable/redlight_btnback_320_80_10"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="更新APP"
+                android:textColor="@android:color/white"/>
+            </TableRow>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="14sp"
+            android:background="#FFEDEDED"></TableRow>
+        <TextView
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关于网优云图的任何使用问题，请联系作者13868808810或者扫描添加微信："
+            />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="48sp"
+                android:paddingRight="48sp"
+                android:src="@drawable/zgq_weixin_erweima" />
+        </TableRow>
+
+    </LinearLayout>
+
+</ScrollView>

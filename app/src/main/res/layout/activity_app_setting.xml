@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:id="@+id/linearlayout_setting"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp">
+        <Button
+            android:id="@+id/button_setting_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_margin="8dp"
+            android:padding="8sp"
+            android:background="@drawable/redlight_btnback_640_80_10"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/white"
+            android:text="修改配置参数"/>
+</LinearLayout>
+</ScrollView>

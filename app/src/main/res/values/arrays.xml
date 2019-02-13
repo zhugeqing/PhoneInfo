@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="wenzhou_area">
+            <item>鹿城</item>
+            <item>龙湾</item>
+            <item>瓯海</item>
+            <item>乐清</item>
+            <item>瑞安</item>
+            <item>苍南</item>
+            <item>永嘉</item>
+            <item>平阳</item>
+            <item>文成</item>
+            <item>泰顺</item>
+            <item>洞头</item>
+        </string-array>
+
+    <string-array name="area_type">
+        <item>电梯地下室</item>
+        <item>高层住宅</item>
+        <item>多层住宅</item>
+        <item>农居点</item>
+        <item>乡村</item>
+        <item>厂房仓库</item>
+        <item>写字楼办公室</item>
+        <item>商城</item>
+        <item>其他</item>
+        </string-array>
+
+    <string-array name="indoor_outdoor">
+        <item>室内</item>
+        <item>室外</item>
+        </string-array>
+
+
+
+    </resources>

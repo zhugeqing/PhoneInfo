@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_searchcontent"
+            android:layout_width="0sp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="请输入，多个关键词用空格间隔"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/btn_searchnow"
+                android:layout_height="wrap_content"
+                android:layout_width="0sp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFEDEDED"
+                android:padding="6sp"
+                android:text="搜索对象"
+                android:textSize="14sp"></TextView>
+        </TableRow>
+        <LinearLayout
+            android:id="@+id/linearlayout_tablenames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <TableRow
+            android:layout_marginTop="6sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFEDEDED"
+                android:padding="6sp"
+                android:text="搜索结果"
+                android:textSize="14sp"></TextView>
+        </TableRow>
+        <LinearLayout
+            android:id="@+id/linearlayout_searchresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_mapsearchresult"
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:paddingBottom="4sp"
+                android:paddingLeft="4sp"
+                android:paddingRight="4sp"
+                android:visibility="gone">
+            </ListView>
+        </LinearLayout>
+        <TableRow
+            android:layout_marginTop="6sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFEDEDED"
+                android:padding="6sp"
+                android:text="详细信息"
+                android:textSize="14sp"></TextView>
+        </TableRow>
+        <LinearLayout
+            android:id="@+id/linearlayout_resultdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

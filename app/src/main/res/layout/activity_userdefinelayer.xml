@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tbr_userdefinelayer_fileselect">
+        <LinearLayout
+            android:id="@+id/linearlayout_layerfiles"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="请选择图层文件"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TableRow
+        android:id="@+id/tbr_userdefinelayer_fileselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+    <Button
+        android:id="@+id/button_kmlfileselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="8sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="请选择KML或KMZ文件，点击本按钮加载"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_layerfileselect"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="32sp"
+        android:layout_marginRight="32sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"
+        android:background="@drawable/redlight_btnback_640_80_10"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/white"
+        android:text="点击本按钮加载"/>
+    </TableRow>
+</RelativeLayout>

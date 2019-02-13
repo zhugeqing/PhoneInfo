@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvCellName"
+        android:layout_width="0sp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:paddingRight="2sp"
+        android:text="tvCellName" />
+    <TextView
+        android:id="@+id/tvCellId"
+        android:layout_width="0sp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="tvCellId" />
+    <TextView
+        android:id="@+id/tvPCI"
+        android:layout_width="0sp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="tvPCI" />
+    <TextView
+        android:id="@+id/tvTac"
+        android:layout_width="0sp"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="tvTac" />
+    <TextView
+        android:id="@+id/tvdBm"
+        android:layout_width="0sp"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="tvdBm" />
+        <TextView
+            android:id="@+id/tvRsrq"
+            android:layout_width="0sp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="tvRsrq" />
+
+    </TableRow>
+</RelativeLayout>

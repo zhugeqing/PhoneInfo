@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--这是用来预览相机的空间，大家可以去好好了解一下，这里我就不详细讲了-->
+        <SurfaceView
+            android:id="@+id/sfv_camera_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--想要的信息放在surfaceview之上就OK了，下面是我想要加入的信息-->
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_camera_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="08:27"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_camera_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="2016/07/24"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imgvBtn_camera_switchFlash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <ImageButton
+                android:id="@+id/imgvBtn_camera_switchCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="3dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_camera_operation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击操作" />
+
+            <TextView
+                android:id="@+id/tv_camera_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="钓鱼的小木匠" />
+
+            <TextView
+                android:id="@+id/tv_camera_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="广东省惠州市惠城区鹅岭南路6号TCL工业大厦" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical">
+
+            <!--android:background="@drawable/take_photo_selector"
+            定义一个根据点击状态改变的xml文件-->
+            <ImageButton
+                android:id="@+id/btn_camera_takePic"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/takepictrue_64_zgqpic" />
+
+            <Button
+                android:id="@+id/imgvBtn_camera_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:text="取 消"
+                android:textColor="#0f0"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

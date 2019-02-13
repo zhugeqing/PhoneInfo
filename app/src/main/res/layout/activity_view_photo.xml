@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_viewphoto_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/imgv_viewphoto_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="65dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_viewphoto_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="08:27"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_viewphoto_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_viewphoto_time"
+                    android:shadowColor="#000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="2016/07/24"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="1dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_viewphoto_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="点击操作" />
+
+                <TextView
+                    android:id="@+id/tv_viewphoto_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="钓鱼的小木匠" />
+
+                <TextView
+                    android:id="@+id/tv_viewphoto_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="广东省惠州市惠城区鹅岭南路6号TCL工业大厦" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12sp"
+            android:background="#000"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true">
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_viewphoto_cancel"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20sp"
+                android:textColor="#4fe19f"
+                android:text="重 拍" />
+
+                <CheckBox
+                    android:id="@+id/cb_viewphoto_savePic"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="保存"
+                    android:textColor="#4fe19f" />
+
+            <TextView
+                android:id="@+id/tv_viewphoto_ok"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="#4fe19f"
+                android:text="使用图片" />
+
+
+            </TableRow>
+        </RelativeLayout>
+</RelativeLayout>
